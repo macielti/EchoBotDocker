@@ -1,0 +1,28 @@
+{
+  "name": "echobotdocker",
+  "version": "1.0.0",
+  "description": "A simple dockerized version of EchoBot built with Node.js and Telegraf.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macielti/EchoBotDocker.git"
+  },
+  "keywords": [
+    "docker",
+    "echobot",
+    "telegraf"
+  ],
+  "author": "Bruno do Nascimento Maciel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/macielti/EchoBotDocker/issues"
+  },
+  "homepage": "https://github.com/macielti/EchoBotDocker#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "telegraf": "^3.37.0"
+  }
+}
