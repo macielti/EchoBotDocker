@@ -1,26 +1,25 @@
 require('dotenv').config();
 const Telegraf = require('telegraf');
-const log4js = require('log4js');
-
-const logger = log4js.getLogger();
-logger.level = 'info';
+const logMessage = require('./util');
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
+bot.start(async context => {
+    let messageContent = `I am a simple dockerized version of Echo Bot (https://github.com/macielti/EchoBotDocker).
+    I will reply to every message that you send to me with the same content that you sended.`;
+    context.reply(messageContent);
+
+    logMessage(context);
+
+});
+
 bot.on('text', async context => {
-        let messageTextContent = await context.update.message.text;
-        context.reply(messageTextContent);
+    let messageTextContent = await context.update.message.text;
+    context.reply(messageTextContent);
 
-        // first name of the sender user
-        let firstNameFrom = context.update.message.from.first_name;
-        // username of the sender user
-        let username = context.update.message.from.username;
-        // select username or first name
-        let userInfo = username? username:firstNameFrom;
+    logMessage(context);
 
-        logger.info(`Echoed to ${userInfo}: ${messageTextContent}`);
-    }
-);
+});
 
 // start bot
 bot.launch();
