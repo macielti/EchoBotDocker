@@ -1,6 +1,8 @@
 # EchoBotDocker
 A simple dockerized version of EchoBot built with Node.js and Telegraf.
 
+You can try it on https://t.me/echo_docker_bot
+
 ## Deployment
 
 #### REQUIREMENTS
@@ -23,3 +25,7 @@ BOT_TOKEN=123456789:abcdejkedjsahkdshdjkash
 3. Create the container from the builded image:
 
 `docker container create --name echo_bot_docker --net bridge --restart always echo_bot_docker:latest`
+
+4. Start container:
+
+`docker start echo_bot_docker`
