@@ -1,7 +1,7 @@
 # EchoBotDocker
 A simple dockerized version of EchoBot built with Node.js and Telegraf.
 
-You can try it on https://t.me/echo_docker_bot
+You can try it on https://t.me/echo_docker_bot it is a version running on Google Console services.
 
 ## Deployment
 
