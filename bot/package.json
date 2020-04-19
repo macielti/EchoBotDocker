@@ -23,6 +23,7 @@
   "homepage": "https://github.com/macielti/EchoBotDocker#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "log4js": "^6.2.0",
     "telegraf": "^3.37.0"
   }
 }
