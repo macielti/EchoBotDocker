@@ -6,6 +6,4 @@ COPY bot ./
 
 RUN npm install
 
-EXPOSE 2001
-
 CMD ["node", "main.js"]
